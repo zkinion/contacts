@@ -3,11 +3,9 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Hash;
 
-class create_demo_user extends Seeder
+class create_first_list extends Seeder
 {
     /**
      * Run the database seeds.
@@ -16,11 +14,9 @@ class create_demo_user extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
+        DB::table('lists')->insert([
+            'name' => 'Friends',
             'id' => 1,
-            'name' => 'Demo User',
-            'email' => 'demo@demo.com',
-            'password' => Hash::make('demo'),
         ]);
     }
 }
