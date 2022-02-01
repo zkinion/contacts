@@ -11,10 +11,13 @@ class Contact extends Model
 
     protected $fillable = [
         'user_id',
+        'list_id',
         'name',
         'email',
         'address',
         'phone',
     ];
+
+    protected $table = 'contacts';
 
 }

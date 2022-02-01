@@ -8,4 +8,16 @@ use Illuminate\Database\Eloquent\Model;
 class Lists extends Model
 {
     use HasFactory;
+
+
+    protected $fillable = [
+        'user_id',
+        'list_id',
+        'name',
+        'email',
+        'address',
+        'phone',
+    ];
+
+    protected $table = 'lists';
 }
