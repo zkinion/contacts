@@ -636,6 +636,9 @@ select {
 .mt-4 {
   margin-top: 1rem;
 }
+.ml-4 {
+  margin-left: 1rem;
+}
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -647,9 +650,6 @@ select {
 }
 .mt-3 {
   margin-top: 0.75rem;
-}
-.ml-4 {
-  margin-left: 1rem;
 }
 .mr-2 {
   margin-right: 0.5rem;
@@ -962,6 +962,10 @@ select {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -969,10 +973,6 @@ select {
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
-}
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 .text-lg {
   font-size: 1.125rem;
@@ -1010,6 +1010,10 @@ select {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
 }
+.text-gray-800 {
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+}
 .text-indigo-600 {
   --tw-text-opacity: 1;
   color: rgb(79 70 229 / var(--tw-text-opacity));
@@ -1029,10 +1033,6 @@ select {
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
-}
-.text-gray-800 {
-  --tw-text-opacity: 1;
-  color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 .text-green-600 {
   --tw-text-opacity: 1;
@@ -1130,16 +1130,25 @@ select {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 .add_new_image{
+    cursor: pointer;
     width: auto;
     height: 6rem;
 }
 .delete_icon{
+    cursor: pointer;
     height: 3rem;
     /* margin-bottom: 4px; */
     padding-bottom: 1rem;
     width: auto;
     display: inline-block;
     float: right;
+}
+.delete_icon_span{
+    cursor: pointer;
+}
+.edit_contact_link{
+    cursor: pointer;
+    font-weight: bolder;
 }
 .hover\:border-gray-300:hover {
   --tw-border-opacity: 1;

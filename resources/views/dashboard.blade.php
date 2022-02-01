@@ -17,7 +17,11 @@
                     </a>
                     @foreach($contacts as $contact)
                             <div class="pa2 mb3 striped--near-white">
-                                <header class="b mb2">{{ $contact->name }}
+                                <header class="b mb2 edit_contact_link">
+
+                                    <a href="/edit_contact/{{$contact->id}}">
+                                        {{ $contact->name }}
+                                    </a>
                                     <span class="delete_icon_span" data-id="{{ $contact->id }}" data-name="{{ $contact->name }}">
                                         <img src="/images/delete_icon.png" class="delete_icon" />
                                     </span>

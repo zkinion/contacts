@@ -3,16 +3,28 @@
 @import 'tailwindcss/utilities';
 
 .add_new_image{
+    cursor: pointer;
     width: auto;
     height: 6rem;
 }
 
 
 .delete_icon{
+    cursor: pointer;
     height: 3rem;
     /* margin-bottom: 4px; */
     padding-bottom: 1rem;
     width: auto;
     display: inline-block;
     float: right;
+}
+
+.delete_icon_span{
+    cursor: pointer;
+}
+
+
+.edit_contact_link{
+    cursor: pointer;
+    font-weight: bolder;
 }
