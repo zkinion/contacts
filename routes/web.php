@@ -21,7 +21,7 @@ Route::get('/', function () {
 Route::get('/delete_contact/{id}', [ ContactController::class, 'delete_contact' ]);
 Route::get('/edit_contact/{id}', [ ContactController::class, 'edit_contact' ]);
 Route::get('/add_new_contact/', [ ContactController::class, 'add_new_contact' ]);
-Route::get('/save_contact/', [ ContactController::class, 'save_contact' ]);
+Route::post('/save_contact/', [ ContactController::class, 'save_contact' ]);
 Route::post('/save_edit_contact/', [ ContactController::class, 'save_edit_contact' ]);
 
 Route::get('/dashboard', function () {
